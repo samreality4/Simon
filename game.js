@@ -53,7 +53,7 @@ function animatePress(key) {
 
 //check the current userClickedPattern array vs current gamePattern array everytime a button is clicked.
 function checkAnswer() {
-    var i = userClickedPattern.length - 1;
+    const i = userClickedPattern.length - 1;
     if (userClickedPattern[i] !== gamePattern[i]) {
       soundOnEvent("wrong");
       $("body").addClass("game-over");
